@@ -1,11 +1,26 @@
 {
-    "manifest_version": 1,
+    "manifest_version": 3,
     "name": "Movie Recommender",
+    "description": "We will recommend some movies that are related to what you searched!",
     "version": "1.0.0",
+    "icons": {
+        "128": "movie_128x128.png"
+    },
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
             "js": ["Content.js"]
         }
-    ]
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "19": "movie_19x19.png",
+            "128": "movie_128x128.png"
+        },
+        "default_title": "Let's find similar movies!"
+    }
 }
