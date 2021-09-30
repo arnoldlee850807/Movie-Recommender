@@ -17,3 +17,9 @@ A Chrome extension that takes recommends movies to watch based on a movie entere
 
 # Demo
 
+https://user-images.githubusercontent.com/30451351/135382516-f15d7746-3519-4e78-b83d-bc040128c1f6.mp4
+
+# Roadmap
+
+Next steps and instructions for contributions can be found in our [contributions](https://github.com/arnoldlee850807/Movie-Recommender/CONTRIBUTIONS.md) section.
+
