@@ -1,4 +1,5 @@
 import { BASE_URL, APIKEY } from './config.js';
+import fetch from 'node-fetch';
 
 const searchMovie = (movieName = 'star+wars') => fetch(`${BASE_URL}search/movie?api_key=${APIKEY}&query=${movieName}`)
   .then((res) => res.json())
