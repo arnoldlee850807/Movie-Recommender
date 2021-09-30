@@ -21,5 +21,5 @@ https://user-images.githubusercontent.com/30451351/135382516-f15d7746-3519-4e78-
 
 # Roadmap
 
-Next steps and instructions for contributions can be found in our [contributions](https://github.com/arnoldlee850807/Movie-Recommender/CONTRIBUTIONS.md) section.
+Next steps and instructions for contributions can be found in our [contributions](https://github.com/arnoldlee850807/Movie-Recommender/CONTRIBUTING.md) section.
 
