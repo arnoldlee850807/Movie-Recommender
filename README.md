@@ -12,6 +12,9 @@ A Chrome extension that takes recommends movies to watch based on a movie entere
 # Installation
 
 - Clone/download the repository.
+- Install node_packes
+`$ npm install`
+
 - In Chrome, enable `Developer Mode` by navigating to `Tools`>`Extensions` and clicking the checkbox in the top-right corner.
 - Select `Load unpacked`, and navigate to the repository
 
