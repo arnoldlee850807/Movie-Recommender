@@ -37,6 +37,10 @@ const handleEmptyResults = (textInput) => {
   searched.appendChild(noRes);
 };
 
+/**
+ * Displays the searched movie information at the head of the extension
+ * @param  {String} movie The processed name of the movie, taken from the input box
+ */
 const displaySearchedMovie = async (movie) => {
   clearDiv(1);
   const searched = document.getElementById('searched');
@@ -63,11 +67,22 @@ const displaySearchedMovie = async (movie) => {
   appendReccomendations(title, similarMovies.results.slice(1));
 };
 
+
+/**
+ * Refreshes extension for new recommendations from newly entered target movie
+ * @param  {String} movie The processed name of the movie, taken from the input box
+ */
 const getNewRecommedations = async (movie) => {
   clearDiv(3);
   displaySearchedMovie(movie);
 };
 
+/**
+ * Appends recommended movie information to the extension page
+ * @param  {Movie} searchedMovie The movie object retrieved from the entered movie name
+ * @param {Array} movies The array of recommended movie items 
+ * @return {Element} div 
+ */
 const appendReccomendations = (searchedMovie, movies) => {
   clearDiv(2);
   const divs = movies.map((m) => {
@@ -94,3 +109,6 @@ const appendReccomendations = (searchedMovie, movies) => {
     content.appendChild(div);
   });
 };
+
+export { displaySearchedMovie, appendReccomendations, getNewRecommedations };
+
