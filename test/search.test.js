@@ -1,12 +1,7 @@
-//var assert = require('assert');
-//var chai = require('chai');
-//var search = require('../search.js');
-//var expect = chai.expect;
+
 import assert from 'assert';
 import chai from 'chai';
 var expect = chai.expect;
-//var searchMovie = search.searchMovie;
-//var getSimilarMovies = search.getSimilarMovies;
 import fetch from 'node-fetch';
 import { searchMovie, getSimilarMovies } from '../search.js';
 
@@ -21,5 +16,8 @@ describe('searchMovie', function() {
     });
     it('Should not return a null when finding similar movies', function() {
         assert.notEqual(getSimilarMovies(res.id), null);
+    });
+    it('Should not return a return the same movie each search', function() {
+        assert.notEqual(res, searchMovie("Candyman"));
     });
 });
