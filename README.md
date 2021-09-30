@@ -10,6 +10,7 @@
 
 A Chrome extension that takes recommends movies to watch based on a movie entered. Uses TMDB for suggestions.
 
+
 # Installation
 
 - Clone/download the repository.
