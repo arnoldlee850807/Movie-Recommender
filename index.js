@@ -12,11 +12,28 @@ searchBtn.addEventListener('click', async () => {
     : handleEmptyResults(textInput);
 });
 
+const clearDiv = (x = 2) => {
+  switch (x) {
+    case 1:
+      document.getElementById('searched').innerHTML = '';
+      break;
+    case 2:
+      document.getElementById('content').innerHTML = '';
+      break;
+    case 3:
+      document.getElementById('searched').innerHTML = '';
+      document.getElementById('content').innerHTML = '';
+      break;
+    default:
+      console.log(`No case for ${x}`);
+  }
+};
+
 const handleEmptyResults = (textInput) => {
   clearDiv(3);
   const searched = document.getElementById('searched');
   const noRes = document.createElement('h4');
-  noRes.appendChild(document.createTextNode(`No results for ${textInput}`));
+  noRes.appendChild(document.createTextNode(`No results for ${textInput}`))
   searched.appendChild(noRes);
 };
 
@@ -46,6 +63,11 @@ const displaySearchedMovie = async (movie) => {
   appendReccomendations(title, similarMovies.results.slice(1));
 };
 
+const getNewRecommedations = async (movie) => {
+  clearDiv(3);
+  displaySearchedMovie(movie);
+};
+
 const appendReccomendations = (searchedMovie, movies) => {
   clearDiv(2);
   const divs = movies.map((m) => {
@@ -72,25 +94,3 @@ const appendReccomendations = (searchedMovie, movies) => {
     content.appendChild(div);
   });
 };
-
-const getNewRecommedations = async (movie) => {
-  clearDiv(3);
-  displaySearchedMovie(movie);
-};
-
-const clearDiv = (x = 2) => {
-  switch (x) {
-    case 1:
-      document.getElementById('searched').innerHTML = '';
-      break;
-    case 2:
-      document.getElementById('content').innerHTML = '';
-      break;
-    case 3:
-      document.getElementById('searched').innerHTML = '';
-      document.getElementById('content').innerHTML = '';
-      break;
-  }
-};
-
-export { displaySearchedMovie, appendReccomendations, getNewRecommedations };
