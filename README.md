@@ -6,6 +6,7 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/arnoldlee850807/Movie-Recommender)
 ![[Build Status]](https://img.shields.io/gitlab/pipeline/arnoldlee850807/Movie-Recommender)
 [![DOI](https://zenodo.org/badge/410278639.svg)](https://zenodo.org/badge/latestdoi/410278639)
+[![Build Status](https://app.travis-ci.com/arnoldlee850807/Movie-Recommender.svg?branch=main)](https://app.travis-ci.com/arnoldlee850807/Movie-Recommender)
 ![Coverage Status](https://img.shields.io/gitlab/coverage/arnoldlee850807/Movie-Recommender)
 
 A Chrome extension that takes recommends movies to watch based on a movie entered. Uses TMDB for suggestions.
