@@ -13,3 +13,7 @@ Most major roadmap items will be added to the [issues page](https://github.com/a
 - Improving the interface with Vue/Beaufy.
 - Integrate links to external streaming services in search results.
 - Create further integration with the browser experience, like being able to select movie names in a webpage, and search that way.
+
+# Errors and Issues
+
+Please document any errors you run into within the extension under issues, starting your issue with "(Error)".
