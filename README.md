@@ -9,6 +9,7 @@
 [![Build Status](https://app.travis-ci.com/arnoldlee850807/Movie-Recommender.svg?branch=main)](https://app.travis-ci.com/arnoldlee850807/Movie-Recommender)
 ![Coverage Status](https://img.shields.io/gitlab/coverage/arnoldlee850807/Movie-Recommender)
 
+
 A Chrome extension that takes recommends movies to watch based on a movie entered. Uses TMDB for suggestions, and presents them in an easy to interact with format for users. Search functionality is built open enough to be easily edited and built on top of. API access for TMDB is provided, and allows for a robust suite of movie data for bespoke recommendation features.
 
 Movie Recommender aims to provide a convenient way for movie watchers of all kinds to find the next movie they want to watch, using other movies they like as a base.
